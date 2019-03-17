@@ -3,9 +3,10 @@
 The Video Game Recommender System shows top 10 games list based on user reviews. The Game Finder App use Metacritic Video Game Comments. To find top 10 games, the app use inverted term frequency for finiding similarities between user query and and game.  
 
 First, we need to load user comments and game titles.To load data, we will first load each line, then we will spilt the data to get title and user comments. 
+        
+        
         inputStream2 = getResources().openRawResource(R.raw.data2);// Loading each line
         BufferedReader reader2 = new BufferedReader(new InputStreamReader(inputStream2)); //Loading each line
-        
         while (index < data2_line.size()) { //Spliting the data to get title and user reviews
             temp3=data2_line.get(index).split(",");
             game_number2.add(temp3[0]);
