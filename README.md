@@ -18,8 +18,9 @@ First, we need to load user comments and game titles.To load data, we will first
         
         
 After loading the loading the data, we will remove stopwords and tokenize each word. 
+
         while (index < title_data2.size()) {
-            Pattern p =                       Pattern.compile("\\b(i|me|my|myself|we|our|ours|ourselves|you|your|yours|yourselves|he|him|she|her|himself|herself|his|" +
+            Pattern p =                                Pattern.compile("\\b(i|me|my|myself|we|our|ours|ourselves|you|your|yours|yourselves|he|him|she|her|himself|herself|his|" +
                     "it|its|it's|itself|they|them|their|theirs|themselves|what|which|who|whom|this|that" +
                     "|these|those|am|is|are|was|were|be|been|being|have|has|had|having|do|does|did|a|an|the|and" +
                     "|but|if|or|because|as|until|while|of|at|by|for|with|about|against|between|into|through|during|" +
