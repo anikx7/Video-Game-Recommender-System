@@ -7,7 +7,7 @@ In the information retrieval, TF-IDF stands for term frequency-inverse document 
 
 After fiding tf-idf for each document and user query, we need to calculate consine similarity. Consine similiarity shows how similar two vectors. 
 
-#Procedure
+# Procedure
 
 First, we need to load user comments and game titles.To load data, we will first load each line, then we will spilt the data to get title and user comments. 
         
