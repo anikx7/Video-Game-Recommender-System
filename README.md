@@ -1,6 +1,13 @@
 # Video-Game-Recommender-System
 
-The Video Game Recommender System shows top 10 games list based on user reviews. The Game Finder App use Metacritic Video Game Comments. To find top 10 games, the app use inverted term frequency for finiding similarities between user query and and game.  
+The Video Game Recommender System shows top 10 games list based on user reviews. The Game Finder App use Metacritic Video Game Comments. To find top 10 games, the app use inverted term frequency for finiding similarities between user query and and game.
+
+# Background
+In the information retrieval, TF-IDF stands for term frequency-inverse document frequency. TF-IDF is tells us how important a particular word. Both tf and idf calculated separately.
+
+After fiding tf-idf for each document and user query, we need to calculate consine similarity. Consine similiarity shows how similar two vectors. 
+
+#Procedure
 
 First, we need to load user comments and game titles.To load data, we will first load each line, then we will spilt the data to get title and user comments. 
         
