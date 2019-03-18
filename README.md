@@ -135,6 +135,8 @@ After getting all the TF_IDF score, we have to find consine similarity score. Fi
     
 We will show top 10 results based on the above result.
 
+# Output
+
 Now, lets run the app. We will search funny game.
 
 
