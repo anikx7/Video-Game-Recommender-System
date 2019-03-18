@@ -140,6 +140,19 @@ It will show top 10 games.
 ![Alt text](Image/4.JPG?raw=true "Title")
 ![Alt text](Image/5.JPG?raw=true "Title")
 
+Environment:
+Java Verison: java version "11.0.2" 2019-01-15 LTS
+Java(TM) SE Runtime Environment: 18.9 (build 11.0.2+9-LTS)
+OS: Windows 10
+Android Studio version: 3.3
+
+References:
+https://github.com/AdnanOquaish/Cosine-similarity-Tf-Idf-/blob/master/DocumentParser.java
+https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in-java
+
+Dataset link:
+https://www.kaggle.com/dahlia25/metacritic-video-game-comments#metacritic_game_info.csv
+
 
 
 
