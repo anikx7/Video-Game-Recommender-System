@@ -86,5 +86,52 @@ Now, we have created our token. We will use tokens to find TF_IDF value. We crea
         return ((tokenized_review.size()) / count);
     }
     
+We will use the following formula for TF_IDF score. Every every t token we will save the TF_IDF value. 
+    
 ![Alt text](Image/formula1.JPG?raw=true "Title")
+
+Now, we will find TF_IDF for user query. We tokenize user uery and find TF_IDF score. We will use below formula to find TF_IDF score.
+
+![Alt text](Image/formula2.JPG?raw=true "Title")
+
+After getting all the TF_IDF score, we have to find consine similarity score. Finiding cosine similarity for each document and user query is inefficient. For this reason, we will create posting list. Using posting list we can find top 10 documents for each user query token. To find the cosine_similarity we will create following cosine similarity caluclaton function.
+    public double cos_sim(Vector<Double>Vector1, Vector<Double> Vector2) {
+        double mul = 0.0,sum1 = 0.0,sum2=0.0,cos_sim_value = 0.0;
+
+        //Converting Vector to array for cosine similarity
+        double vector1[] = new double[Vector1.size()];
+        for (int i=0; i<Vector1.size(); i++) {
+            vector1[i] = Vector1.get(i);
+        }
+        double vector2[] = new double[Vector2.size()];
+        for (int i=0; i<Vector2.size();i++) {
+            vector2[i] = Vector2.get(i);
+        }
+
+        //Calculating cosine similarity
+        for (int i=0;i<vector1.length;i++) {
+            sum1= sum1+ Math.pow(vector1[i], 2);
+            sum2= sum2+Math.pow(vector2[i], 2);
+            mul= mul+(vector1[i] * vector2[i]);
+        }
+        //Square roots
+        sum1 = Math.sqrt(sum1);
+        sum2 = Math.sqrt(sum2);
+
+        if (sum1 != 0.0 | sum2 != 0.0) {
+            cos_sim_value = mul / (sum1 * sum2);
+        } else {
+            return 0.0;
+        }
+        return cos_sim_value;
+    }
+    
+We will show top 10 results based on the above result.
+
+Now, lets run the app. We will search funny game.
+
+
+![Alt text](Image/1.JPG?raw=true "Title")
+
+
 
