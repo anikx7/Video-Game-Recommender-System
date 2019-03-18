@@ -133,6 +133,12 @@ Now, lets run the app. We will search funny game.
 
 ![Alt text](Image/1.JPG?raw=true "Title")
 
+It will show top 10 games.
+
+![Alt text](Image/2.JPG?raw=true "Title")
+![Alt text](Image/3.JPG?raw=true "Title")
+![Alt text](Image/4.JPG?raw=true "Title")
+![Alt text](Image/5.JPG?raw=true "Title")
 
 
 
