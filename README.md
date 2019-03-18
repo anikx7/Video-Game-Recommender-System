@@ -45,4 +45,46 @@ After loading the loading the data, we will remove stopwords and tokenize each w
             tokenized_review.add(tokenized);
             index++;
         }
+        
+        
+        
+Now, we have created our token. We will use tokens to find TF_IDF value. We created two functions for tf and idf which will return tf and idf scores.
+ //Calculating tf score
+    public double tf(Vector<String> doc1, String user_query_term) {
+        Double result = 0.0;
+        int index = 0;
+        while (index <doc1.size())
+        {
+            if (user_query_term.equalsIgnoreCase(doc1.get(index)))
+                result++;
+            index++;
+        }
+        if (result == 0)
+            return 0.0;
+        return (result/doc1.size()) ;
+    }
+
+    //Finding idf value
+    public double idf(String term) {
+        double count = 0;
+        int index = 0;
+        while (index<tokenized_review.size())
+        {
+            Vector<String> temp_query = tokenized_review.get(index);
+            int index3=0;
+            while (index3 < temp_query.size()){
+                if (term.equalsIgnoreCase(temp_query.get(index3))) {
+                    count++;
+                    break;
+                }
+                index3++;
+            }
+            index++;
+        }
+        if (count == 0)
+            return 1.0;
+        return ((tokenized_review.size()) / count);
+    }
+    
+![Alt text](Image/formula1.JPG?raw=true "Title")
 
