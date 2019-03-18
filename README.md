@@ -131,7 +131,7 @@ We will show top 10 results based on the above result.
 Now, lets run the app. We will search funny game.
 
 
-![Alt text](Image/1.jpg?raw=true "Title")
+![Alt text](Image/1.JPG?raw=true "Title")
 
 
 
