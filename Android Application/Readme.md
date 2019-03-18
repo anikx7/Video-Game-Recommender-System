@@ -6,7 +6,7 @@ How to run it the application on Android Phone
 3. Click on the apk file
 4. It will install the Game Finder
 
-How to import the project in the Android studio1
+How to import the project in the Android studio
 
 1. Download the Example.zip folder
 2. Extract the .zip folder
