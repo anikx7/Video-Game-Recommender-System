@@ -239,12 +239,14 @@ Android Studio version: 3.3
 
 # References:
 Search
-https://github.com/AdnanOquaish/Cosine-similarity-Tf-Idf-/blob/master/DocumentParser.java
-https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in-java
+
+1. https://github.com/AdnanOquaish/Cosine-similarity-Tf-Idf-/blob/master/DocumentParser.java
+2. https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in-java
 
 Classifier
-https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf
-https://www.youtube.com/watch?v=psHrcSacU9Y
+
+1. https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf
+2. https://www.youtube.com/watch?v=psHrcSacU9Y
 
 Dataset link:
 https://www.kaggle.com/dahlia25/metacritic-video-game-comments#metacritic_game_info.csv
