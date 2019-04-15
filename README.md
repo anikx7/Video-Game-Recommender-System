@@ -198,16 +198,23 @@ It assumes every training data is independent. It also assumes each class is ind
             user_p_action = user_p_action + cal_p;
             cal_p=0.0;
  8. The classifier will show top 3 most likely class for given query.
- 
 Sample Output:
 The user query:
+
+
+
+
+
 ![Alt text](Image/c1.JPG?raw=true "Title")
 
 Classification result:
 
+
+
+
 ![Alt text](Image/c2.JPG?raw=true "Title")
 
-![Alt text](Image/c4.JPG?raw=true "Title")
+![Alt text](Image/c3.JPG?raw=true "Title")
 
 
 
