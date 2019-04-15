@@ -164,6 +164,7 @@ It assumes every training data is independent. It also assumes each class is ind
 5. Now we will consider user query. The user query also need to tokenized classification. We will use same code used in the development phase I for usery query tokenization.
 6. Now we are ready to use multinomial naive bayes classifier. We will begin by calculating Prior probabilities of each classes. To find prior probabilities, we will count how many document has a particular class and we will divide that the number by the total number of class.
         //Finding probabilty of each class
+        
         double p_action= action_count/genre2.size();
         double p_sports=sports_count/genre2.size();
         double p_driving=driving_count/genre2.size();
@@ -177,6 +178,7 @@ It assumes every training data is independent. It also assumes each class is ind
         double p_miscella = miscella_count/genre2.size();
         
  7. Now we will find conditional probabilties. After finding conditional probabities, we will find each class probabilities.
+ 
          while (index< user_query.size())
         {
             user_query_term = user_query.get(index);
@@ -218,6 +220,16 @@ Classification result:
 
 
 
+
+
+# How to build it
+1. Clone the whole repository
+2. Extract Example1.zip folder in the Android Application folder
+3. Download and install Android Studio Version 3.3
+4. Download and install Java runtime
+5. Open Android Studio
+6. Import the Example1 extracted folder.
+7. Build the project and run it
 
 # Environment:
 Java Verison: java version "11.0.2" 2019-01-15 LTS
