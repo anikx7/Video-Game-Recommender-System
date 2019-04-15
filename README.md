@@ -1,5 +1,7 @@
 # Video-Game-Recommender-System: Game Finder
 
+# Development Phase I: Search
+
 The Video Game Recommender System shows top 10 games list based on user reviews. The Game Finder App use Metacritic Video Game Comments. To find top 10 games, the app use inverted term frequency for finiding similarities between user query and and game.
 
 # Background
@@ -149,15 +151,72 @@ It will show top 10 games.
 ![Alt text](Image/4.JPG?raw=true "Title")
 ![Alt text](Image/5.JPG?raw=true "Title")
 
-Environment:
+
+# Development Phase II: Classify
+Classifying large dataset requires fast algorithm. To classify our existing documents from dataset, we will use Multinomial Naive Bayes Classidifer. The classify feature will classify user query based on training data.
+
+Multinational Naive Bayes Classifier: 
+It assumes every training data is independent. It also assumes each class is independent from each other.  Lets discuss step by step algorithm of multinomial naive bayes:
+1. First we will load training data into the program from data-set. The training data-set contains details and genre of each document.
+2. We will count the number of classes in the whole data-set.
+3. We will perform stemming and lemmatization on the documents. We will use the same code that has been used in the search feature in the development phase I for stemming and lemmatization.
+4. We will tokenize each document. We will also put each unique word in the bag of words. We also use same code that has been used in the search feature in the development phase I for tokenizing.
+5. Now we will consider user query. The user query also need to tokenized classification. We will use same code used in the development phase I for usery query tokenization.
+6. Now we are ready to use multinomial naive bayes classifier. We will begin by calculating Prior probabilities of each classes. To find prior probabilities, we will count how many document has a particular class and we will divide that the number by the total number of class.
+        //Finding probabilty of each class
+        double p_action= action_count/genre2.size();
+        double p_sports=sports_count/genre2.size();
+        double p_driving=driving_count/genre2.size();
+        double p_puzzle=puzzle_count/genre2.size();
+        double p_strategy=strategy_count/genre2.size();
+        double p_adventure=adventure_count/genre2.size();
+        double p_racing=racing_count/genre2.size();
+        double p_fighting=fighting_count/genre2.size();
+        double p_shooter=shooter_count/genre2.size();
+        double p_compilation=compilation_count/genre2.size();
+        double p_miscella = miscella_count/genre2.size();
+        
+ 7. Now we will find conditional probabilties. After finding conditional probabities, we will find each class probabilities.
+         while (index< user_query.size())
+        {
+            user_query_term = user_query.get(index);
+            index2 = 0;
+            word_count = 0;
+            while (index2<action_index.size())
+            {
+                token_doc = tokenized_review.get(action_index.get(index2));
+                index3 = 0;
+                while (index3<token_doc.size())
+                {
+                    if (user_query_term.equalsIgnoreCase(token_doc.get(index3)))
+                        word_count++;
+                    index3++;
+                }
+                index2++;
+            }
+            cal_p = (word_count+1)/(action_count+unique_bag_of_words.size());
+            user_p_action = user_p_action + cal_p;
+            cal_p=0.0;
+ 8. The classifier will show top 3 most likely class for given query.
+ 
+Sample Output:
+
+
+
+# Environment:
 Java Verison: java version "11.0.2" 2019-01-15 LTS
 Java(TM) SE Runtime Environment: 18.9 (build 11.0.2+9-LTS)
 OS: Windows 10
 Android Studio version: 3.3
 
-References:
+# References:
+Search
 https://github.com/AdnanOquaish/Cosine-similarity-Tf-Idf-/blob/master/DocumentParser.java
 https://stackoverflow.com/questions/27685839/removing-stopwords-from-a-string-in-java
+
+Classifier
+https://nlp.stanford.edu/IR-book/pdf/13bayes.pdf
+https://www.youtube.com/watch?v=psHrcSacU9Y
 
 Dataset link:
 https://www.kaggle.com/dahlia25/metacritic-video-game-comments#metacritic_game_info.csv
