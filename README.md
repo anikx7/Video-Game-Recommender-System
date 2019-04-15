@@ -251,6 +251,11 @@ Classifier
 Dataset link:
 https://www.kaggle.com/dahlia25/metacritic-video-game-comments#metacritic_game_info.csv
 
+# Blog post
+1. Game Homepage: https://sites.google.com/view/videogamefinder
+2. Blog post: https://sites.google.com/view/report1blog
+
+
 
 
 
