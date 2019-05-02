@@ -222,10 +222,7 @@ Classification result:
 
 
 
-![Alt text](Image/GameFinder.mp4?raw=true "Title")
 
-FEDWUL24FZc
-[![GameFinder](http://img.youtube.com/vi/FEDWUL24FZc/0.jpg)](https://www.youtube.com/watch?v=FEDWUL24FZc "GameFinder")
 
 
 # How to build it
