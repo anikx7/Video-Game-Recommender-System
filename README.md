@@ -222,7 +222,7 @@ Classification result:
 
 
 
-[![Alt text](https://www.youtube.com/watch?v=FEDWUL24FZc&feature=youtu.be)](https://www.youtube.com/watch?v=FEDWUL24FZc&feature=youtu.be)
+[![Alt text](Image/GameFinder.mp4)
 
 
 # How to build it
