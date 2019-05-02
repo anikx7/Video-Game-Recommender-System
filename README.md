@@ -222,6 +222,9 @@ Classification result:
 
 
 
+[![Alt text](https://www.youtube.com/watch?v=FEDWUL24FZc&feature=youtu.be)](https://www.youtube.com/watch?v=FEDWUL24FZc&feature=youtu.be)
+
+
 # How to build it
 1. Clone the whole repository
 2. Extract Example1.zip folder in the Android Application folder
