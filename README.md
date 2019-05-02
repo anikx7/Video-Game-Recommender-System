@@ -222,7 +222,7 @@ Classification result:
 
 
 
-[![Alt text](Image/GameFinder.mp4)
+![Alt text](Image/GameFinder.mp4?raw=true "Title")
 
 
 # How to build it
